@@ -1,0 +1,17 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_AMAP_KEY: string | undefined;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
+
+declare global {
+  interface Window {
+    AMap: any;
+  }
+}
+
+export {};
