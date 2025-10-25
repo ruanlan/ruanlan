@@ -43,3 +43,11 @@ Desktop.ini
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# React / Vite specific
+.vite/
+*.local
+
+# Backup files
+*.original
+*.backup

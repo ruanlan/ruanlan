@@ -1,95 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高德地图车辆轨迹追踪</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=YOUR_AMAP_KEY"></script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🚗 车辆轨迹追踪系统</h1>
-        </header>
-        
-        <div class="main-content">
-            <div class="control-panel">
-                <div class="panel-section">
-                    <h3>车辆信息</h3>
-                    <div class="form-group">
-                        <label for="vehicleId">车辆编号:</label>
-                        <input type="text" id="vehicleId" placeholder="输入车辆编号">
-                    </div>
-                    <div class="form-group">
-                        <label for="vehicleName">车辆名称:</label>
-                        <input type="text" id="vehicleName" placeholder="输入车辆名称">
-                    </div>
-                </div>
-
-                <div class="panel-section">
-                    <h3>轨迹控制</h3>
-                    <div class="button-group">
-                        <button id="startTracking" class="btn btn-primary">开始追踪</button>
-                        <button id="stopTracking" class="btn btn-danger">停止追踪</button>
-                        <button id="clearTrack" class="btn btn-warning">清除轨迹</button>
-                    </div>
-                    <div class="button-group">
-                        <button id="playback" class="btn btn-info">轨迹回放</button>
-                        <button id="pausePlayback" class="btn btn-secondary">暂停回放</button>
-                    </div>
-                </div>
-
-                <div class="panel-section">
-                    <h3>模拟数据</h3>
-                    <div class="button-group">
-                        <button id="loadSampleRoute" class="btn btn-success">加载示例路线</button>
-                        <button id="generateRandomRoute" class="btn btn-info">生成随机路线</button>
-                    </div>
-                </div>
-
-                <div class="panel-section">
-                    <h3>统计信息</h3>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-label">总里程:</span>
-                            <span id="totalDistance" class="stat-value">0 km</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">轨迹点数:</span>
-                            <span id="pointCount" class="stat-value">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">平均速度:</span>
-                            <span id="avgSpeed" class="stat-value">0 km/h</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">当前状态:</span>
-                            <span id="trackingStatus" class="stat-value">未开始</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel-section">
-                    <h3>轨迹列表</h3>
-                    <div id="trackList" class="track-list">
-                        <p class="empty-message">暂无轨迹数据</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="map-container">
-                <div id="map"></div>
-                <div class="map-controls">
-                    <button id="centerMap" class="map-btn" title="回到中心">📍</button>
-                    <button id="fullscreen" class="map-btn" title="全屏">⛶</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/map.js"></script>
-    <script src="js/vehicle.js"></script>
-    <script src="js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高德地图车辆轨迹追踪系统 - React</title>
+    <meta name="description" content="基于高德地图和React的车辆轨迹追踪系统" />
+    
+    <!-- 高德地图API -->
+    <script type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: 'YOUR_SECURITY_CODE', // 安全密钥
+      }
+    </script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=YOUR_AMAP_KEY&plugin=AMap.Driving,AMap.Geolocation"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
