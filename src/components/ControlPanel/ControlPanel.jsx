@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { useVehicleStore } from '../../store/vehicleStore'
-import { generateSampleRoute, generateRandomRoute } from '../../utils/simulator'
+// import { generateSampleRoute, generateRandomRoute } from '../../utils/simulator'
 import './ControlPanel.css'
 
 function ControlPanel() {
   const [vehicleId, setVehicleId] = useState('')
   const [vehicleName, setVehicleName] = useState('')
   const addVehicle = useVehicleStore(state => state.addVehicle)
-  const mapInstance = useVehicleStore(state => state.mapInstance)
+  // const mapInstance = useVehicleStore(state => state.mapInstance)
 
   // 添加新车辆
   const handleAddVehicle = () => {

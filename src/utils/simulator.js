@@ -1,7 +1,7 @@
 // 车辆移动模拟工具
 
 // 模拟车辆移动
-export function simulateVehicleMovement(currentPosition, step = 0) {
+export function simulateVehicleMovement(currentPosition) {
   const [lng, lat] = currentPosition
   
   // 生成随机偏移（模拟真实移动）
@@ -75,9 +75,9 @@ export async function generateRouteAlongRoad(map, startPoint, endPoint) {
         const steps = route.steps
         const trackPoints = []
         
-        steps.forEach((step, index) => {
+        steps.forEach((step) => {
           const path = step.path
-          path.forEach((point, pointIndex) => {
+          path.forEach((point) => {
             trackPoints.push({
               lng: point.lng,
               lat: point.lat,

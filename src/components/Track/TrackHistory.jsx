@@ -15,7 +15,7 @@ function TrackHistory() {
     ? vehicles.find(v => v.id === selectedVehicle) 
     : null
 
-  const { startPlayback, stopPlayback, pausePlayback, resumePlayback } = 
+  const { startPlayback, stopPlayback, pausePlayback } = 
     useTrackPlayback(vehicle?.id, vehicle?.trackPoints)
 
   const handlePlay = () => {

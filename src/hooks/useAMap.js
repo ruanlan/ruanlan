@@ -38,6 +38,7 @@ export const useAMap = (containerId, options = {}) => {
         mapRef.current.destroy()
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [containerId])
 
   return { map: mapRef.current, isMapReady }
@@ -75,6 +76,7 @@ export const useVehicleMarker = (map, vehicle) => {
         markerRef.current = null
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, vehicle?.id])
 
   // 更新标记位置
@@ -86,6 +88,7 @@ export const useVehicleMarker = (map, vehicle) => {
       const content = createVehicleMarkerContent(vehicle)
       markerRef.current.setContent(content)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vehicle?.currentPosition, vehicle?.isTracking, vehicle?.status])
 
   return markerRef.current
@@ -124,6 +127,7 @@ export const useTrackPolyline = (map, vehicle) => {
         polylineRef.current = null
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, vehicle?.id])
 
   // 更新轨迹线
@@ -146,6 +150,7 @@ export const useTrackPolyline = (map, vehicle) => {
       polylineRef.current = polyline
       updateVehicle(vehicle.id, { polyline })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [vehicle?.trackPoints])
 
   return polylineRef.current
