@@ -1,0 +1,203 @@
+.statistics {
+  padding: 20px;
+}
+
+.stats-header {
+  margin-bottom: 20px;
+}
+
+.stats-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #343a40;
+}
+
+.stats-subtitle {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.stats-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #343a40;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.stat-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box-success {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05));
+}
+
+.stat-box-warning {
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+}
+
+.stat-box-info {
+  background: linear-gradient(135deg, rgba(23, 162, 184, 0.1), rgba(23, 162, 184, 0.05));
+}
+
+.stat-box .stat-icon {
+  font-size: 28px;
+}
+
+.stat-box .stat-content {
+  flex: 1;
+}
+
+.stat-box .stat-label {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.stat-box .stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.ranking-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.rank-badge {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  background: white;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rank-info {
+  flex: 1;
+}
+
+.rank-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.rank-id {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.rank-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.vehicle-table {
+  overflow-x: auto;
+}
+
+.vehicle-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vehicle-table th {
+  text-align: left;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  background: #f8f9fa;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.vehicle-table td {
+  padding: 12px;
+  font-size: 13px;
+  color: #343a40;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.vehicle-table tr:hover {
+  background: #f8f9fa;
+}
+
+.table-vehicle-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+}
+
+.status-badge.status-tracking {
+  background: var(--success-color);
+}
+
+.status-badge.status-online {
+  background: var(--warning-color);
+  color: #212529;
+}
+
+.status-badge.status-offline {
+  background: var(--secondary-color);
+}

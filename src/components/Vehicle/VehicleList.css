@@ -1,0 +1,52 @@
+.vehicle-list {
+  padding: 20px;
+}
+
+.vehicle-list-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-hint {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.vehicle-list-header {
+  margin-bottom: 20px;
+}
+
+.vehicle-list-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #343a40;
+}
+
+.list-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.stat-item {
+  color: #6c757d;
+}
+
+.stat-item strong {
+  color: var(--primary-color);
+  margin-left: 4px;
+}
+
+.vehicle-list-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
