@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/car-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高德地图车辆轨迹追踪系统 - React版</title>
+    <meta name="description" content="基于React和高德地图API的专业车辆轨迹追踪与管理系统" />
+    <script type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: 'YOUR_SECURITY_CODE',
+      };
+    </script>
+    <script src="https://webapi.amap.com/maps?v=2.0&key=YOUR_AMAP_KEY&plugin=AMap.Driving,AMap.Geocoder,AMap.Geolocation"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
