@@ -1,0 +1,30 @@
+{
+  "name": "amap-vehicle-tracking",
+  "version": "1.0.0",
+  "description": "高德地图车辆轨迹追踪系统 - 基于高德地图 API 的车辆轨迹追踪和回放系统",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000 -o -c-1",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "amap",
+    "gaode",
+    "vehicle-tracking",
+    "gps-tracking",
+    "map",
+    "trajectory",
+    "高德地图",
+    "车辆追踪",
+    "轨迹追踪"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
